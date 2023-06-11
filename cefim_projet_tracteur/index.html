@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TracTroc</title>
+    <link rel="stylesheet" href="./public/css/reseter.css" />
+    <link rel="stylesheet" href="./public/css/robin.css" />
+    <link rel="stylesheet" href="./public/css/footer.css">
+    <link rel="stylesheet" href="./public/css/glide.core.min.css">
+    <link rel="stylesheet" href="./public/css/glide/dist/css/glide.theme.min.css">
+    <script src="./public/js/index.js" type="module" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./public/images/Logo.png">
+        <ul>
+          <div class="logo">
+          </div>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./public/views/panier.html">Panier</a></li>
+          <li><a href="./public/views/Equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+      <div class="slider-container">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="./public/images/tracteur-slider-1.png" alt="truck slide1">
+              </li>
+              <li class="glide__slide">
+                <img src="./public/images/tracteur-slider-2.jpg" alt="truck slide2">
+              </li>
+              <li class="glide__slide">
+                <img src="./public/images/slide 3.jpg" alt="truck slide3">
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows slider-buttons" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+      </div>
+      </div>
+    </header>
+
+    <!--Début page Magasin-->
+    <!-- Annonce du nom du site + mise en avant du Best-Seller-->
+    <main>
+      <section>
+        <div class="gamme">
+          <div class="gamme-container">
+            <h1>Découvrez la gamme TracTroc</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora animi, consequatur, error at atque odit exercitationem minus excepturi 
+              beatae sed quis adipisci earum delectus nesciunt, obcaecati laudantium libero dolorum!
+              Ex, quisquam. Ut possimus totam eum illum, consequatur commodi reiciendis magni laborum voluptatibus deserunt impedit? Rerum consequuntur aliquid corrupti a cupiditate! 
+              Saepe velit molestiae pariatur assumenda non, itaque nihil in iste reiciendis est corporis fuga et illum ratione. Cumque quis debitis reiciendis commodi repudiandae error blanditiis? Laudantium, voluptas iure blanditiis animi dolore tempore 
+              hic libero eum ipsam pariatur obcaecati similique quia ratione laborum quos eos omnis enim, amet optio earum.</p>
+          </div>
+        </div>
+      
+        <div class="boss">
+          <div class="boss-container">
+            <div class="boss-container-top">
+              <img src="./public/images/Boss.jpg" alt="Best seller"/>
+            </div>
+            <div class="boss-container-bottom">
+              <div class="h2-container"><h2>Tracteur Boss</h2>
+              </div>
+              
+              <input type="number" class="quantite" name="quantite" min="0"
+              value="0">
+              <p class="accueil-product-price"><span class="price">9999</span>€</p>
+              <button class="discover">Découvrir</button>
+              <button class="plus">+</button>
+              <button class="minus">-</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Fin du Best-Seller-->
+      <!--Début de la partie produits avec 4 tracteurs proposés à la vente-->
+      <section class="product">
+        <ul>
+          <li>
+            <img src="./public/images/tracteur 1.jpg" alt="Produit 1">
+            <div class="product-info">
+              <h3>Produit 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                vel molestie quam.</p>
+                <p class="accueil-product-price"><span class="price">493</span>€</p>
+            
+                <div class="quantity">
+                <button class="minus">-</button>
+                <input type="number" class="quantite" name="quantite" min="0"
+                  value="0">
+                <button class="plus">+</button>
+              </div>
+              <button class="details">Détails</button>
+            </div>
+          </li>
+          <li>
+            <img src="./public/images/tracteur 2.jpg" alt="Produit 2">
+            <div class="product-info">
+              <h3>Produit 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                vel molestie quam.</p>
+                <p class="accueil-product-price"><span class="price">1500</span>€</p>
+              <div class="quantity">
+                <button class="minus">-</button>
+                <input type="number" class="quantite" name="quantite" min="0"
+                  value="0">
+                <button class="plus">+</button>
+              </div>
+              <button class="details">Détails</button>
+            </div>
+          </li>
+          <li>
+            <img src="./public/images/tracteur 3.jpg" alt="Produit 3">
+            <div class="product-info">
+              <h3>Produit 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                vel molestie quam.</p>
+                <p class="accueil-product-price"><span class="price">2000</span>€</p>
+              <div class="quantity">
+                <button class="minus">-</button>
+                <input type="number" class="quantite" name="quantite" min="0"
+                  value="0">
+                <button class="plus">+</button>
+              </div>
+              <button class="details">Détails</button>
+            </div>
+          </li>
+          <li>
+            <img src="./public/images/tracteur 4.jpg" alt="Produit 4">
+            <div class="product-info">
+              <h3>Produit 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                vel molestie quam.</p>
+                <p class="accueil-product-price"><span class="price">2500</span>€</p>
+              <div class="quantity">
+                <button class="minus">-</button>
+                <input type="number" class="quantite" name="quantite" min="0"
+                  value="0">
+                <button class="plus">+</button>
+              </div>
+              <button class="details">Détails</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!--Fin de la section produits avec les 4 tracteurs-->
+      <!--Début de la section formulaire du calcul pour le panier-->
+      <section class="panier">
+        <div class="panier-container">
+          <h2>PANIER</h2>
+          <form id="calculateur">
+          <label for="total">Total en €</label>
+          <input type="number" id="produitTotal" name="produitTotal" min="0"/>
+          <button>Payer</button>
+          </div>
+      </section>
+        <!--Fin  du formulaire-->
+    </main>
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide').mount()
+    </script>
+  <footer>
+    <div class="imgfooter">
+      <section>
+        <h4>Produit</h4>
+        <ul>
+          <li>series F-100</li>
+          <li>series F-200</li>
+          <li>series F-300</li>
+          <li>series F-400</li>
+          <li>series F-500</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Support</h4>
+        <ul>
+          <li>Contact</li>
+          <li>Garantie</li>
+          <li>Pièces détachées</li>
+          <li>Manuel</li>
+          <li>FAQ</li>
+        </ul>
+      </section>
+      <section>
+        <h4>A propos</h4>
+        <ul>
+          <li>Equipe</li>
+          <li>Conditions générales de vente</li>
+          <li>Partenaires</li>
+          <li>Plan du site</li>
+        </ul>
+      </section>
+      <section class="btnlogo">
+        <h4>Suivez-nous</h4>
+        <div class="footerbtn">
+        <button><img src="./public/images/facebook.png" alt=""></button>
+        <button><img src="./public/images/5305170_bird_social media_social network_tweet_twitter_icon.svg" alt=""></button>
+        <button><img src="./public/images/211929_social_youtube_icon.svg" alt=""></button>
+      </div>
+        <div class="logo"><img src="./public/images/Tractroc_logo.svg" alt=""></div>
+      </section>
+    
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    new Glide('.glide').mount()
+  </script>
+</body>
+
+</html>

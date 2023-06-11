@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reseter.css" />
+    <link rel="stylesheet" href="../css/panier.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/glide.core.min.css">
+    <link rel="stylesheet" href="../css/glide/dist/css/glide.theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="../js/panier.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../images/Logo.png">
+        <ul>
+          <div class="logo">
+          </div>
+          <li><a href="/cefim_projet_tracteur/index.html">Home</a></li>
+          <li><a href="./panier.html">Panier</a></li>
+          <li><a href="./Equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+      <div class="slider-container">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="../images/tracteur-slider-1.png" alt="truck slide1">
+              </li>
+              <li class="glide__slide">
+                <img src="../images/tracteur-slider-2.jpg" alt="truck slide2">
+              </li>
+              <li class="glide__slide">
+                <img src="../images/slide 3.jpg" alt="truck slide3">
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows slider-buttons" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+      </div>
+      </div>
+
+    </header>
+    <main>
+      <div class="objectifBox">
+        <h1>Panier</h1>
+      </div>
+      <section id="container-products">
+        <!--------------------  1er Produit      ------------------->
+        <div class="flex gap50 product-container" id="container-product1">
+          <img src="../images/Boss.jpg" alt="photo du produit" />
+          <div class="flex column gap20">
+            <div class="flex verticalCenter gap50">
+              <h2>Tracto boss</h2>
+              <img id="modifTitle" class="img-pencil" src="../images/free-icon-pencil-6591016.png" alt="logo modif">
+            </div>
+            <div>
+              <p>
+                Prix :
+                <span class="product-price" id="price-product1">9999</span>€ /
+                unité
+              </p>
+            </div>
+            <div class="flex gap20 verticalCenter">
+              <p>Quantité :</p>
+              <button class="btn btn-delete" id="delete-product1">
+                Supprimer
+              </button>
+              <button class="btn-quantity-moins" id="moins-product1">-</button>
+              <input
+                type="number"
+                name=""
+                id="quantity-product1"
+                class="product-quantity"
+                value="1"
+              />
+
+              <button class="btn-quantity-plus" id="plus-product1">+</button>
+            </div>
+          </div>
+        </div>
+        <!-----------2eme ----------------------->
+        <div class="flex gap50 product-container" id="container-product2">
+          <img src="../images/Boss.jpg" alt="photo du produit" />
+          <div class="flex column gap20">
+            <div class="flex verticalCenter gap50">
+              <h2>Produit 1</h2>
+              <img  id="modifTitle" class="img-pencil" src="../images/free-icon-pencil-6591016.png" alt="logo modif">
+            </div>
+            <div>
+              <p>
+                Prix :
+                <span class="product-price" id="price-product2">493</span>€ /
+                unité
+              </p>
+            </div>
+            <div class="flex gap20 verticalCenter">
+              <p>Quantité :</p>
+              <button class="btn btn-delete" id="delete-product2">
+                Supprimer
+              </button>
+              <button class="btn-quantity-moins" id="moins-product2">-</button>
+              <input
+                type="number"
+                name=""
+                id="quantity-product2"
+                class="product-quantity"
+                value="1"
+              />
+
+              <button class="btn-quantity-plus" id="plus-product2">+</button>
+            </div>
+          </div>
+        </div>
+        <!------------------------  fin des produits  ------------------------>
+      </section>
+      <section>
+        <div
+          class="flex verticalCenter gap20 center"
+          id="add-product-container"
+        >
+          <p class="addProduct-txt">Ajouter un produit :</p>
+          <button class="btn-quantity-plus" id="addproduct">+</button>
+        </div>
+      </section>
+      <section>
+        <div class="flex gap20 flex-end marginTop50">
+          <h3>Total des achats:</h3>
+          <p class=" total-cart flex verticalCenter">
+            <span class=" flex verticalCenter" id="total"></span>€
+          </p>
+        </div>
+        <div class="flex flex-end">
+          <a class="paiement" href="https://www.paypal.com/fr/" target="_blank"
+            >Payer</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="imgfooter">
+        <section>
+          <h4>Produit</h4>
+          <ul>
+            <li>series F-100</li>
+            <li>series F-200</li>
+            <li>series F-300</li>
+            <li>series F-400</li>
+            <li>series F-500</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Support</h4>
+          <ul>
+            <li>Contact</li>
+            <li>Garantie</li>
+            <li>Pièces détachées</li>
+            <li>Manuel</li>
+            <li>FAQ</li>
+          </ul>
+        </section>
+        <section>
+          <h4>A propos</h4>
+          <ul>
+            <li>Equipe</li>
+            <li>Conditions générales de vente</li>
+            <li>Partenaires</li>
+            <li>Plan du site</li>
+          </ul>
+        </section>
+        <section class="btnlogo">
+          <h4>Suivez-nous</h4>
+          <div class="footerbtn">
+          <button><img src="../images/facebook.png" alt=""></button>
+          <button><img src="../images/5305170_bird_social media_social network_tweet_twitter_icon.svg" alt=""></button>
+          <button><img src="../images/211929_social_youtube_icon.svg" alt=""></button>
+        </div>
+          <div class="logo"><img src="../images/Tractroc_logo.svg" alt=""></div>
+        </section>
+      
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide').mount()
+    </script>
+  </body>
+  
+  </html>

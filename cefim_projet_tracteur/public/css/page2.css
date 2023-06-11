@@ -1,0 +1,264 @@
+body{
+    background-color: lightgray;
+}
+h2, h3 {
+    padding: 10px;
+    text-align: center;
+    
+}
+.equipeContent {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 140px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profilphoto {
+    position: absolute;
+    top: -100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    border: lightgray solid 10px;
+}
+.profilphoto >img {
+    width: 100%;
+    height: 100%;
+}
+
+.equipeContentTxt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.equipeContentTxt p {
+    padding: 5px 0;
+}
+.equipeSNS {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.equipeSNS img{
+    width: 30px;
+    height: 30px;
+}
+.snsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: lightgray;
+}
+.snsBtn:hover {
+    background-color: lightblue;
+}
+
+.sexeBtn {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.sexeBtn button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+.sexeBtn button:hover {
+    background-color: lightblue;
+}
+.sexeBtn button > img {
+    width: 15px;
+    height: 15px;
+}
+
+.modifyBtn > img {
+    width: 15px;
+    height: 15px;
+}
+.modifyBtn {
+    border: none;
+    background-color: transparent;
+}
+.modifyBtn > img:hover {
+    filter: opacity(0.3) drop-shadow(0 0 0 rgb(255, 255, 255));
+}
+.first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.third-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.createNew {
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.createNew >img {
+    width: 40px;
+    height: 40px;
+}
+.createNew:hover {
+    background-color: lightblue;
+}
+
+.objectifBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.objectifBox p {
+    padding: 15px;
+}
+.valeurs-imgwrap {
+    display: flex;
+    width: 70%;
+    overflow: hidden;
+}
+.valeurs-imgwrap > img {
+    width: 1200px;
+}
+h1 {
+    text-align: center;
+    font-size: 48px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.contentsWrap {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto
+}
+
+.imgfooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    color: lightgray;
+}
+.imgfooter h4 {
+    text-align: center;
+    padding: 20px
+} 
+.imgfooter section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    
+}
+.imgfooter li {
+    list-style: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+.footerbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imgfooter button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgfooter button:hover {
+    background-color: lightblue;
+}
+.imgfooter img {
+    width: 25px;
+    height: 25px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.valeurs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.valeurs-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    background-color: white
+}
+.valeurs-article > h3 {
+    text-align: left;
+    padding:10px;
+}
+.valeurs-article > p {
+    text-align: left;
+    padding:10px;
+}
